@@ -2,12 +2,14 @@ import { combineReducers } from 'redux';
 // my reducers
 import SearchTerm from './search-term'
 import Videos from './videos'
+import CurrentVideo from './current-video'
 import APIKey from './api-key'
 
 const rootReducer = combineReducers({
 	API_KEY: APIKey,
 	searchTerm: SearchTerm,
-	videos: Videos
+	videos: Videos,
+	currentVideo: CurrentVideo
 });
 
 export default rootReducer;

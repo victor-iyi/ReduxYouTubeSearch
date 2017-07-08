@@ -13,3 +13,11 @@ export function videoListsChanged(videos) {
 		payload: videos
 	}
 }
+
+// when a video is clicked
+export function videoSelected(video) {
+	return {
+		type: 'VIDEO_SELECTED',
+		payload: video
+	}
+}
