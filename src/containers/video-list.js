@@ -13,7 +13,7 @@ class VideoList extends Component {
 		// videos available
 		return this.props.videos.map( video => {
 			return (
-				<VideoListItem onVideoSelected={this.props.videoSelected} video={video} />
+				<VideoListItem key={video.key} onVideoSelected={this.props.videoSelected} video={video} />
 			)
 		})
 	}

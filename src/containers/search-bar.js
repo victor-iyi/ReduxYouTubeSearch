@@ -25,7 +25,7 @@ class SearchBar extends Component {
 			<div className="search-bar">
 				<input 
 					type="text" placeholder="Search for videos" 
-					// value={this.props.searchTerm}
+					value={this.props.searchTerm}
 					onChange={ (event) => this.onSearch(event.target.value) } />
 				<div>
 					{ this.props.searchTerm ? `Searching for: ${this.props.searchTerm}` : '' }
