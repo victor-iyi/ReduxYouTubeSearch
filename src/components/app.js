@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+// custom imports
+import SearchBar from '../containers/search-bar'
 
 export default class App extends Component {
 
@@ -6,6 +8,7 @@ export default class App extends Component {
 		return (
 			<div>
 				<h1> YouTube Search </h1>
+				<SearchBar />
 			</div>
 		)
 	}
