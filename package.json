@@ -1,0 +1,30 @@
+{
+  "name": "reduxyoutubesearch",
+  "version": "1.0.0",
+  "description": "A YouTube Search application with Redux",
+  "main": "index.js",
+  "dependencies": {
+    "youtube-api-search": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-iyiola/ReduxYouTubeSearch.git"
+  },
+  "keywords": [
+    "youtube",
+    "search",
+    "redux",
+    "youtube api",
+    "react"
+  ],
+  "author": "Victor I. Afolabi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victor-iyiola/ReduxYouTubeSearch/issues"
+  },
+  "homepage": "https://github.com/victor-iyiola/ReduxYouTubeSearch#readme"
+}
