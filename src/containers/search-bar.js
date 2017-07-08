@@ -4,9 +4,14 @@ import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 // custom imports
-import { videoListsChanged, searchTermChanged } from '../actions'
+import { videoListsChanged, searchTermChanged, videoSelected } from '../actions'
 
 class SearchBar extends Component {
+
+	constructor(props) {
+		super(props)
+		this.props.videoSelected(this.props.videos[0])
+	}
   // performs YouTube API Search
 	search() {
 		YTSearch({ key: this.props.API_KEY, term: this.props.searchTerm }, videos => {
@@ -39,6 +44,7 @@ class SearchBar extends Component {
 const mapStateToProps = (state) => {
 	return {
 		searchTerm: state.searchTerm,
+		videos: state.videos,
 		API_KEY: state.API_KEY
 	}
 }
@@ -46,7 +52,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return bindActionCreators({
 		searchTermChanged: searchTermChanged,
-		videoListsChanged: videoListsChanged
+		videoListsChanged: videoListsChanged,
+		videoSelected: videoSelected
 	}, dispatch)
 }
 
