@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+// Components & containers
+import VideoDetail from '../containers/video-detail'
+import VideoList from '../containers/video-list'
 
 export default class App extends Component {
   render() {
     return (
-      <div>React simple starter</div>
+      <div>
+        <h1>YouTube Search Practise</h1>
+        <VideoDetail />
+        <VideoList />
+      </div>
     );
   }
 }
