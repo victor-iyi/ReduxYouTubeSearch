@@ -9,7 +9,7 @@ h1:first-of-type {
 }
 
 .search-bar {
-	margin: 20px;
+	margin: 20px 0 35px;
 	text-align: center;
 }
 
@@ -19,6 +19,12 @@ h1:first-of-type {
 }
 .search-bar input:focus {
 	outline: black;
+}
+
+.search-bar p {
+	font-style: italic;
+	font-size: 13px;
+	color: #0a0a0a;
 }
 
 .video-item img {

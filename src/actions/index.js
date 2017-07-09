@@ -11,3 +11,10 @@ export function videoChanged(vdieos) {
 		payload: videos
 	}
 }
+
+export function searchTermChanged(searchTerm) {
+	return {
+		type: 'SEARCH_TERM_CHANGED',
+		payload: searchTerm
+	}
+}
